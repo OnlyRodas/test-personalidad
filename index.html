@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Test de Personalidad</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Pantalla de inicio -->
+    <div class="screen" id="welcome">
+      <h1>¡Bienvenido al Test!</h1>
+      <p>Toca "Comenzar" para empezar.</p>
+      <button onclick="startTest()">Comenzar</button>
+    </div>
+
+    <!-- Preguntas -->
+    <div class="screen" id="quiz" style="display:none;">
+      <div id="question-container"></div>
+      <button id="next-btn" onclick="nextQuestion()" disabled>Siguiente</button>
+    </div>
+
+    <!-- Resultado final -->
+    <div class="screen" id="result" style="display:none;">
+      <h2>¡Tu resultado es:</h2>
+      <p id="result-text"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
